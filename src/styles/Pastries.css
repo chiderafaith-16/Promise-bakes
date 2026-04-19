@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-top: 0;
+}
+
+
+/* hero section */
+
+.pastery-hero{
+    width: 100%;
+    height: 135vh;
+    padding: 50px;
+    background: linear-gradient(to right, rgba(248, 200, 220, 0.5), rgba(255, 245, 225, 1));
+}
+.pasteryhero-image{
+  height: 94vh;
+  background-image: url("/pastery-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+   transition: transform 1.5s ease, filter 1.5s ease;
+}
+.pasteryhero-image:hover{
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+.pasteryhero-text{
+    height: 94vh;
+    width: 100%;
+    background-color: #3f252288;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+} 
+.pasteryhero-text h1{
+    color: white;
+    font-weight: 700;
+    font-size: 65px;
+    width: 50%;
+}
+.pasteryhero-text p{
+    color: rgba(255, 255, 255, 0.676);
+    letter-spacing: 1.5px;
+    width: 50%;
+    line-height: 25px;
+}
+.pastery-btn{
+    background-color: #3F2522;
+    color: white;
+    border-radius: 50px;
+    width: 210px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 0px 0.5px 0px rgba(0,0,0,0.75);
+    margin-top: 20px;
+}
+.pastery-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* section 2 */
+
+
+.pastry-sect2{
+    width: 100%;
+    height: 110vh;
+    background-color: #FFFBFC;
+    padding: 30px 60px 40px 60px;
+    position: relative;
+}
+.pastryhead-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-left: 75px;
+    padding-right: 80px;
+}
+.pastryhead-flex h1{
+    color: #3F2522;
+    font-weight: 700;
+    font-size: 45px;
+}
+.pastryhead-flex p{
+    color: #3f252277;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.pastry-container{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    transition: transform 0.6s ease-in-out;
+}
+.pastry-product{
+    width: 27%;
+    height: 35%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+   
+    transform: translateY(30px) scale(0.95);
+    animation: fadeSlideUp 0.6s forwards;
+}
+.pastry-product:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+.pastry-product img:first-child{
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.4s ease;
+    position: relative;
+}
+.best{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    background-color: #fff;
+    width: 130px;
+    padding: 4px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: #3F2522;
+    font-weight: 700;
+    font-size: 13px;
+}
+.badge-version{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    background-color: #3F2522;
+    width: 90px;
+    padding: 4px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+.title-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 15px 15px;
+}
+.title-flex h3{
+    color: #3F2522;
+    font-weight: 700;
+}
+.title-flex p{
+    color: #3F2522;
+    font-weight: 700;
+}
+.pastry-para{
+    font-size: 12.5px;
+    letter-spacing: 1px;
+    color: #64748B;
+    padding: 0px 15px 15px 15px;
+    line-height: 20px;
+}
+.butt-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 15px 15px;
+}
+.butt-flex button{
+    width: 230px;
+    background-color: #3F2522;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.butt-flex span{
+    width: 33px;
+    background-color: transparent;
+    border: 1px solid #3F2522;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+
+/*.prev,
+.next {
+  position: absolute;
+  top: 300px;
+  transform: translateY(-50%);
+  background: var(--clr-grey-5);
+  color: var(--clr-white);
+  border-color: transparent;
+  font-size: 4rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.prev:hover,
+.next:hover {
+  background: var(--clr-primary-5);
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+} */
+
+.prev, .next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  font-size: 2rem;
+}
+
+.prev:hover, .next:hover {
+  background: #3F2522;
+  color: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+  left: 40px;
+}
+
+.next {
+  right: 40px;
+}
+
+/* filter button */
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border: none;
+  background: white;
+  color: #3F2522;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.filter-btn:hover {
+  background: #3F2522;
+  color: #fff;
+}
+
+/* ✅ ACTIVE BUTTON */
+.active-btn {
+  background: #3F2522;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+.pastry-line{
+    width: 84%;
+    height: 1.5px;
+    margin: auto;
+    background-color: #3f252240;
+    margin-top: 30px;
+}
+
+/* Section 3 */
+
+.pastry-sect3{
+    width: 100%;
+    height: 120vh;
+    background-color: #FDF0F3;
+    padding: 35px 50px 70px 50px;
+}
+.pastrysect3-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.sect3flex-image{
+    width: 40%;
+}
+.sect3flex-image img{
+    width: 100%;
+    height: 105%;
+}
+.sect3flex-text{
+    width: 50%;
+}
+.sect3flex-text h1{
+    color: #3F2522;
+    font-size: 50px;
+    width: 80%;
+    font-weight: 800;
+}
+.sect3-para {
+    color: #3F2522;
+    letter-spacing: 1.5px;
+    width: 70%;
+    line-height: 35px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.para-flex{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.para-flex p{
+    color: #0F172A;
+}
+.pastery-bttn{
+    background-color: transparent;
+    color: #3F2522;
+    border-radius: 10px;
+    width: 210px;
+    height: 50px;
+    border: 3px solid #3F2522;
+    margin-top: 30px;
+}
+.pastery-bttn a{
+    text-decoration: none;
+    color: #3F2522;
+    font-weight: 600;
+}
+
+/* RESPONSIVENESS */
+
+
+/* ===============================
+   MOBILE (max-width: 600px)
+   =============================== */
+@media (max-width: 600px) {
+  .pastry-sect2{
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    padding: 10px;
+  }
+
+  .pastery-hero {
+    height: auto;
+    padding: 30px 25px;
+  }
+
+  .pasteryhero-image{
+    height: 70vh;
+  }
+  .pasteryhero-text {
+    height: 70vh;
+    padding: 30px;
+  }
+
+  .pasteryhero-text h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .pasteryhero-text p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+/* ================= MOBILE SLIDER ================= */
+
+  .pastryhead-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .pastryhead-flex h2{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+
+  }
+  .pastryhead-flex p{
+    font-size: 12px;
+  }
+  
+  .pastry-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* STACK VERTICALLY */
+    gap: 20px;
+  }
+
+  .pastry-product {
+    width: 100%;
+  }
+
+  /* hide arrows on mobile */
+  .prev,
+  .next {
+    display: none;
+  }
+
+  .btn-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 25px; /* add side padding */
+}
+.filter-btn:first-child {
+  margin-left: 90px; /* extra breathing space */
+}
+.filter-btn:last-child {
+  margin-right: 10px; /* extra breathing space */
+}
+
+.btn-container::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+  /* Section 3 */
+  .pastry-sect3 {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .pastrysect3-flex {
+    flex-direction: column;
+  }
+
+  .sect3flex-image,
+  .sect3flex-text {
+    width: 100%;
+  }
+
+  .sect3flex-text h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .sect3-para {
+    width: 100%;
+    line-height: 28px;
+  }
+
+  .sect3flex-image img {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* ===============================
+   TABLET (601px - 1024px)
+   =============================== */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .pastery-hero{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .pasteryhero-text h1 {
+    font-size: 45px;
+    width: 80%;
+  }
+
+  .pasteryhero-text p {
+    width: 80%;
+  }
+
+  /* Section 2 */
+  .pastry-sect2{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .pastryhead-flex {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .pastry-container {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .pastry-product {
+    width: 45%;
+  }
+
+  /* arrows adjust */
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  /* Section 3 */
+  .pastrysect3-flex {
+    flex-direction: column;
+  }
+
+  .sect3flex-image,
+  .sect3flex-text {
+    width: 100%;
+  }
+
+  .sect3flex-text h1 {
+    font-size: 40px;
+  }
+
+  .sect3-para {
+    width: 90%;
+  }
+}
+
+
+/* ===============================
+   DESKTOP FIX (min-width: 1025px)
+   =============================== */
+@media (min-width: 1025px) {
+
+  .pastery-hero,
+  .pastry-sect2,
+  .pastry-sect3 {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+}
