@@ -31,22 +31,22 @@ p {
 }
 @keyframes bgSlide {
     0%{
-        background-image: url(hero-image.png);
+        background-image: url("/hero-image.png");
     }
     20%{
-        background-image: url(product2.png);
+       background-image: url("/product2.png");
     }  
     40%{
-        background-image: url(menu1.png);
+        background-image: url("/menu1.png");
     }
     60%{
-        background-image: url(pastery1.png);
+       background-image: url("/pastery1.png");
     }
     80%{
-        background-image: url(product3.png);
+        background-image: url("/product3.png");
     }
     100%{
-        background-image: url(menu2.png);
+        background-image: url("/menu2.png");
     }
 }   
 .gallery-flex{

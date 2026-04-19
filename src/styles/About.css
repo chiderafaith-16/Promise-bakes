@@ -20,7 +20,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: change 15s infinite ease-in-out;
+  animation: change 15s infinite ease-in-out ;
 
   display:flex;
   flex-direction:column;
@@ -54,22 +54,22 @@ p {
 }
 @keyframes change {
     0%{
-        background-image: url(about.png);
+        background-image: url("/about.png");
     }
     20%{
-        background-image: url(product2.png);
+        background-image: url("/product2.png");
     }  
     40%{
-        background-image: url(menu1.png);
+        background-image: url("/menu1.png");
     }
     60%{
-        background-image: url(pastery1.png);
+        background-image: url("/pastery1.png");
     }
     80%{
-        background-image: url(product3.png);
+        background-image: url("/product3.png");
     }
     100%{
-        background-image: url(menu2.png);
+        background-image: url("/menu2.png");
     }
 }   
 
